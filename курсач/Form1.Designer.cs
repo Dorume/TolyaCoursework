@@ -76,7 +76,7 @@ namespace курсач
             this.panel1.Controls.Add(this.btnHelp);
             this.panel1.Controls.Add(this.btnFilm);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 359);
+            this.panel1.Location = new System.Drawing.Point(0, 302);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(169, 100);
             this.panel1.TabIndex = 8;
@@ -119,7 +119,7 @@ namespace курсач
             this.btnSeries.FlatAppearance.BorderSize = 0;
             this.btnSeries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeries.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSeries.Location = new System.Drawing.Point(0, 329);
+            this.btnSeries.Location = new System.Drawing.Point(0, 272);
             this.btnSeries.Name = "btnSeries";
             this.btnSeries.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSeries.Size = new System.Drawing.Size(169, 30);
@@ -137,7 +137,7 @@ namespace курсач
             this.panelGenresMenu.Controls.Add(this.boyevyk);
             this.panelGenresMenu.Controls.Add(this.Horror);
             this.panelGenresMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelGenresMenu.Location = new System.Drawing.Point(0, 217);
+            this.panelGenresMenu.Location = new System.Drawing.Point(0, 160);
             this.panelGenresMenu.Name = "panelGenresMenu";
             this.panelGenresMenu.Size = new System.Drawing.Size(169, 112);
             this.panelGenresMenu.TabIndex = 4;
@@ -212,7 +212,7 @@ namespace курсач
             this.btnGenres.FlatAppearance.BorderSize = 0;
             this.btnGenres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenres.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnGenres.Location = new System.Drawing.Point(0, 187);
+            this.btnGenres.Location = new System.Drawing.Point(0, 130);
             this.btnGenres.Name = "btnGenres";
             this.btnGenres.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnGenres.Size = new System.Drawing.Size(169, 30);
@@ -224,11 +224,12 @@ namespace курсач
             // 
             // panelNewsMenu
             // 
+            this.panelNewsMenu.AutoSize = true;
             this.panelNewsMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.panelNewsMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNewsMenu.Location = new System.Drawing.Point(0, 130);
             this.panelNewsMenu.Name = "panelNewsMenu";
-            this.panelNewsMenu.Size = new System.Drawing.Size(169, 57);
+            this.panelNewsMenu.Size = new System.Drawing.Size(169, 0);
             this.panelNewsMenu.TabIndex = 2;
             // 
             // btnNews
@@ -300,6 +301,7 @@ namespace курсач
             this.Name = "Form1";
             this.Text = "Form1";
             this.panelSideMenu.ResumeLayout(false);
+            this.panelSideMenu.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panelGenresMenu.ResumeLayout(false);
             this.panelChildForm.ResumeLayout(false);

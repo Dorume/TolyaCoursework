@@ -35,7 +35,7 @@ namespace курсач
             button.FlatAppearance.BorderSize = 0;
             button.FlatStyle = FlatStyle.Flat;
             button.ForeColor = System.Drawing.Color.LightGray;
-            button.Name = nameOfFilm;
+            button.Text = nameOfFilm;
             button.Padding = new Padding(25, 0, 0, 0);
             button.Size = new System.Drawing.Size(169, 26);
             button.Name = nameOfFilm;
