@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace курсач.Films.Film
 {
-    class FilmC
+    public class FilmC
     {
         public string Name { get; set; }
         public string Rating { get; set; }
@@ -20,7 +20,7 @@ namespace курсач.Films.Film
         public string Jenres { get; set; }
     }
 
-    enum TypeOfFilm
+    public enum TypeOfFilm
     {
         Film, Series
     }

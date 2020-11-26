@@ -7,6 +7,7 @@ namespace курсач
 {
     public partial class Form1 : Form
     {
+        private FilmTemplate FilmForm { get; set; } = new FilmTemplate();
         public Form1()
         {
             InitializeComponent();
@@ -48,7 +49,15 @@ namespace курсач
 
         private void Button_Click(object sender, EventArgs e)
         {
-
+            Button button = sender as Button;
+            foreach (FilmC film in FilmsC.FilmsList)
+            {
+                if(button.Text == film.Name)
+                {
+                    FilmForm.Film = film;
+                    openChildForm(FilmForm);
+                }
+            }
         }
 
         private void customizeDesing()
