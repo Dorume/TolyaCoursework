@@ -19,9 +19,9 @@ namespace курсач.Films
                         TrailerURL = "https://www.youtube.com/watch?v=A5PaKL70hcI",
                         Rating = "4/5", Translation = "Дубляж",
                         ReleaseData = DateTime.Now,
-                        Poster = Properties.Resources.Procklyatie},
+                        Poster = Properties.Resources.Проклятие},
 
-                    new FilmC() {Name = "Закляття 2", Duration = 133,
+                    new FilmC() {Name = "Simpons", Duration = 133,
                         IsNew = false, Jenres = "Хорор",
                         Producer = "Джеймс Ван", Country = "USA",
                         Description = "Some", TypeF = TypeOfFilm.Film,

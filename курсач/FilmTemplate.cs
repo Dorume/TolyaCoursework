@@ -26,15 +26,15 @@ namespace курсач
 
         private void RefreshLabels()
         {
-            LabelName.Text = _Film.Name;
-            LabelCountry.Text = _Film.Country;
-            LabelDescription.Text = _Film.Description;
-            LabelDuration.Text = _Film.Duration.ToString() + " хв.";
-            LabelPremier.Text = _Film.ReleaseData.ToString();
-            LabelProducer.Text = _Film.Producer;
-            LabelRaiting.Text = _Film.Rating;
-            LabelTranslation.Text = _Film.Translation;
-            LabelType.Text = _Film.TypeF.ToString();
+            LabelName.Text = "Назва: " + _Film.Name;
+            LabelCountry.Text = "Країна: " + _Film.Country;
+            LabelDescription.Text = "Опис: " + _Film.Description;
+            LabelDuration.Text = "Тривалість: " + _Film.Duration.ToString() + " хв.";
+            LabelPremier.Text = "Дата прем'єри: " + _Film.ReleaseData.ToString();
+            LabelProducer.Text = "Режисер: " + _Film.Producer;
+            LabelRaiting.Text = "Рейтинг: " + _Film.Rating;
+            LabelTranslation.Text = "Дубляж: " + _Film.Translation;
+            LabelType.Text = "Тип: " + _Film.TypeF.ToString();
             IsNewLabel.Visible = _Film.IsNew;
             PosterPictureBox.Image = _Film.Poster;
         }

@@ -150,7 +150,7 @@ namespace курсач
         {
             if (activeForm != null)
                 activeForm.Close();
-            Width = panelSideMenu.Width + childForm.Width;
+            //Width = panelSideMenu.Width + childForm.Width;
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;

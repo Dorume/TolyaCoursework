@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FilmTemplate));
             this.panel1 = new System.Windows.Forms.Panel();
             this.LabelDescription = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.TrailerButton = new System.Windows.Forms.Button();
+            this.ExitForm3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.IsNewLabel = new System.Windows.Forms.Label();
             this.LabelPremier = new System.Windows.Forms.Label();
             this.LabelType = new System.Windows.Forms.Label();
             this.LabelDuration = new System.Windows.Forms.Label();
@@ -40,47 +44,35 @@
             this.LabelProducer = new System.Windows.Forms.Label();
             this.LabelCountry = new System.Windows.Forms.Label();
             this.LabelRaiting = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.IsNewLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.LabelName = new System.Windows.Forms.Label();
-            this.TrailerButton = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.PosterPictureBox = new System.Windows.Forms.PictureBox();
-            this.ExitForm3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PosterPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panel1.Controls.Add(this.LabelDescription);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.TrailerButton);
-            this.panel1.Controls.Add(this.PosterPictureBox);
-            this.panel1.Controls.Add(this.ExitForm3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(25);
-            this.panel1.Size = new System.Drawing.Size(569, 448);
+            this.panel1.Padding = new System.Windows.Forms.Padding(15);
+            this.panel1.Size = new System.Drawing.Size(564, 446);
             this.panel1.TabIndex = 0;
             // 
             // LabelDescription
             // 
             this.LabelDescription.AutoSize = true;
             this.LabelDescription.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LabelDescription.Location = new System.Drawing.Point(22, 383);
+            this.LabelDescription.Location = new System.Drawing.Point(18, 36);
             this.LabelDescription.Margin = new System.Windows.Forms.Padding(7);
             this.LabelDescription.Name = "LabelDescription";
             this.LabelDescription.Size = new System.Drawing.Size(86, 13);
@@ -91,36 +83,94 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(22, 360);
+            this.label4.Location = new System.Drawing.Point(18, 13);
             this.label4.Margin = new System.Windows.Forms.Padding(3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 33;
             this.label4.Text = "Опис:";
             // 
+            // TrailerButton
+            // 
+            this.TrailerButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TrailerButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TrailerButton.FlatAppearance.BorderSize = 0;
+            this.TrailerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TrailerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TrailerButton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.TrailerButton.Location = new System.Drawing.Point(5, 305);
+            this.TrailerButton.Name = "TrailerButton";
+            this.TrailerButton.Size = new System.Drawing.Size(188, 37);
+            this.TrailerButton.TabIndex = 14;
+            this.TrailerButton.Text = "Трийлер";
+            this.TrailerButton.UseVisualStyleBackColor = false;
+            this.TrailerButton.Click += new System.EventHandler(this.TrailerButton_Click);
+            // 
+            // ExitForm3
+            // 
+            this.ExitForm3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitForm3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.ExitForm3.FlatAppearance.BorderSize = 0;
+            this.ExitForm3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitForm3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.ExitForm3.Location = new System.Drawing.Point(258, 3);
+            this.ExitForm3.Name = "ExitForm3";
+            this.ExitForm3.Size = new System.Drawing.Size(75, 23);
+            this.ExitForm3.TabIndex = 10;
+            this.ExitForm3.Text = "X";
+            this.ExitForm3.UseVisualStyleBackColor = false;
+            // 
             // panel2
             // 
-            this.panel2.AutoSize = true;
-            this.panel2.Controls.Add(this.IsNewLabel);
-            this.panel2.Controls.Add(this.LabelPremier);
-            this.panel2.Controls.Add(this.LabelType);
-            this.panel2.Controls.Add(this.LabelDuration);
-            this.panel2.Controls.Add(this.LabelTranslation);
-            this.panel2.Controls.Add(this.LabelProducer);
-            this.panel2.Controls.Add(this.LabelCountry);
-            this.panel2.Controls.Add(this.LabelRaiting);
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Controls.Add(this.LabelName);
-            this.panel2.Location = new System.Drawing.Point(215, 28);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.LabelDescription);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(15, 362);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(268, 270);
-            this.panel2.TabIndex = 31;
+            this.panel2.Padding = new System.Windows.Forms.Padding(5);
+            this.panel2.Size = new System.Drawing.Size(534, 69);
+            this.panel2.TabIndex = 35;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.PosterPictureBox);
+            this.panel3.Controls.Add(this.TrailerButton);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(15, 15);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(5);
+            this.panel3.Size = new System.Drawing.Size(198, 347);
+            this.panel3.TabIndex = 36;
+            // 
+            // panel4
+            // 
+            this.panel4.AutoSize = true;
+            this.panel4.Controls.Add(this.IsNewLabel);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.ExitForm3);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(213, 15);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(336, 347);
+            this.panel4.TabIndex = 38;
+            // 
+            // IsNewLabel
+            // 
+            this.IsNewLabel.AutoSize = true;
+            this.IsNewLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.IsNewLabel.Location = new System.Drawing.Point(280, 326);
+            this.IsNewLabel.Margin = new System.Windows.Forms.Padding(7);
+            this.IsNewLabel.Name = "IsNewLabel";
+            this.IsNewLabel.Size = new System.Drawing.Size(54, 13);
+            this.IsNewLabel.TabIndex = 16;
+            this.IsNewLabel.Text = "Новинка!";
+            this.IsNewLabel.Visible = false;
             // 
             // LabelPremier
             // 
             this.LabelPremier.AutoSize = true;
             this.LabelPremier.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LabelPremier.Location = new System.Drawing.Point(121, 226);
+            this.LabelPremier.Location = new System.Drawing.Point(7, 202);
             this.LabelPremier.Margin = new System.Windows.Forms.Padding(7);
             this.LabelPremier.Name = "LabelPremier";
             this.LabelPremier.Size = new System.Drawing.Size(68, 13);
@@ -131,7 +181,7 @@
             // 
             this.LabelType.AutoSize = true;
             this.LabelType.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LabelType.Location = new System.Drawing.Point(121, 199);
+            this.LabelType.Location = new System.Drawing.Point(7, 175);
             this.LabelType.Margin = new System.Windows.Forms.Padding(7);
             this.LabelType.Name = "LabelType";
             this.LabelType.Size = new System.Drawing.Size(57, 13);
@@ -142,7 +192,7 @@
             // 
             this.LabelDuration.AutoSize = true;
             this.LabelDuration.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LabelDuration.Location = new System.Drawing.Point(121, 172);
+            this.LabelDuration.Location = new System.Drawing.Point(7, 148);
             this.LabelDuration.Margin = new System.Windows.Forms.Padding(7);
             this.LabelDuration.Name = "LabelDuration";
             this.LabelDuration.Size = new System.Drawing.Size(73, 13);
@@ -153,7 +203,7 @@
             // 
             this.LabelTranslation.AutoSize = true;
             this.LabelTranslation.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LabelTranslation.Location = new System.Drawing.Point(121, 145);
+            this.LabelTranslation.Location = new System.Drawing.Point(7, 121);
             this.LabelTranslation.Margin = new System.Windows.Forms.Padding(7);
             this.LabelTranslation.Name = "LabelTranslation";
             this.LabelTranslation.Size = new System.Drawing.Size(85, 13);
@@ -164,7 +214,7 @@
             // 
             this.LabelProducer.AutoSize = true;
             this.LabelProducer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LabelProducer.Location = new System.Drawing.Point(121, 118);
+            this.LabelProducer.Location = new System.Drawing.Point(7, 94);
             this.LabelProducer.Margin = new System.Windows.Forms.Padding(7);
             this.LabelProducer.Name = "LabelProducer";
             this.LabelProducer.Size = new System.Drawing.Size(76, 13);
@@ -175,7 +225,7 @@
             // 
             this.LabelCountry.AutoSize = true;
             this.LabelCountry.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LabelCountry.Location = new System.Drawing.Point(121, 91);
+            this.LabelCountry.Location = new System.Drawing.Point(7, 67);
             this.LabelCountry.Margin = new System.Windows.Forms.Padding(7);
             this.LabelCountry.Name = "LabelCountry";
             this.LabelCountry.Size = new System.Drawing.Size(69, 13);
@@ -186,186 +236,58 @@
             // 
             this.LabelRaiting.AutoSize = true;
             this.LabelRaiting.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LabelRaiting.Location = new System.Drawing.Point(121, 64);
+            this.LabelRaiting.Location = new System.Drawing.Point(7, 40);
             this.LabelRaiting.Margin = new System.Windows.Forms.Padding(7);
             this.LabelRaiting.Name = "LabelRaiting";
             this.LabelRaiting.Size = new System.Drawing.Size(66, 13);
             this.LabelRaiting.TabIndex = 33;
             this.LabelRaiting.Text = "LabelRaiting";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.label6);
-            this.flowLayoutPanel1.Controls.Add(this.label7);
-            this.flowLayoutPanel1.Controls.Add(this.label8);
-            this.flowLayoutPanel1.Controls.Add(this.label9);
-            this.flowLayoutPanel1.Controls.Add(this.label10);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 30);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(99, 230);
-            this.flowLayoutPanel1.TabIndex = 31;
-            // 
-            // IsNewLabel
-            // 
-            this.IsNewLabel.AutoSize = true;
-            this.IsNewLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.IsNewLabel.Location = new System.Drawing.Point(4, 7);
-            this.IsNewLabel.Margin = new System.Windows.Forms.Padding(7);
-            this.IsNewLabel.Name = "IsNewLabel";
-            this.IsNewLabel.Size = new System.Drawing.Size(54, 13);
-            this.IsNewLabel.TabIndex = 16;
-            this.IsNewLabel.Text = "Новинка!";
-            this.IsNewLabel.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(7, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Назва:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(7, 34);
-            this.label6.Margin = new System.Windows.Forms.Padding(7);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 13);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Рейтинг:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(7, 61);
-            this.label7.Margin = new System.Windows.Forms.Padding(7);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 13);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Країна:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(7, 88);
-            this.label8.Margin = new System.Windows.Forms.Padding(7);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 13);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Продюсер:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Location = new System.Drawing.Point(7, 115);
-            this.label9.Margin = new System.Windows.Forms.Padding(7);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Переклад:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(7, 142);
-            this.label10.Margin = new System.Windows.Forms.Padding(7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 13);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Тривалість:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(7, 169);
-            this.label2.Margin = new System.Windows.Forms.Padding(7, 7, 25, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Тип:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(7, 196);
-            this.label3.Margin = new System.Windows.Forms.Padding(7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 13);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Дата прем\'єри:";
-            // 
             // LabelName
             // 
             this.LabelName.AutoSize = true;
             this.LabelName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LabelName.Location = new System.Drawing.Point(121, 37);
+            this.LabelName.Location = new System.Drawing.Point(7, 13);
             this.LabelName.Margin = new System.Windows.Forms.Padding(7);
             this.LabelName.Name = "LabelName";
             this.LabelName.Size = new System.Drawing.Size(61, 13);
             this.LabelName.TabIndex = 32;
             this.LabelName.Text = "LabelName";
             // 
-            // TrailerButton
+            // panel5
             // 
-            this.TrailerButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TrailerButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TrailerButton.FlatAppearance.BorderSize = 0;
-            this.TrailerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TrailerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TrailerButton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.TrailerButton.Location = new System.Drawing.Point(25, 304);
-            this.TrailerButton.Name = "TrailerButton";
-            this.TrailerButton.Size = new System.Drawing.Size(184, 37);
-            this.TrailerButton.TabIndex = 14;
-            this.TrailerButton.Text = "Трийлер";
-            this.TrailerButton.UseVisualStyleBackColor = false;
-            this.TrailerButton.Click += new System.EventHandler(this.TrailerButton_Click);
+            this.panel5.AutoSize = true;
+            this.panel5.Controls.Add(this.LabelName);
+            this.panel5.Controls.Add(this.LabelPremier);
+            this.panel5.Controls.Add(this.LabelRaiting);
+            this.panel5.Controls.Add(this.LabelCountry);
+            this.panel5.Controls.Add(this.LabelType);
+            this.panel5.Controls.Add(this.LabelProducer);
+            this.panel5.Controls.Add(this.LabelDuration);
+            this.panel5.Controls.Add(this.LabelTranslation);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(99, 347);
+            this.panel5.TabIndex = 40;
             // 
             // PosterPictureBox
             // 
-            this.PosterPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PosterPictureBox.BackgroundImage")));
-            this.PosterPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PosterPictureBox.Image")));
-            this.PosterPictureBox.Location = new System.Drawing.Point(25, 25);
+            this.PosterPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PosterPictureBox.Location = new System.Drawing.Point(5, 5);
             this.PosterPictureBox.Name = "PosterPictureBox";
-            this.PosterPictureBox.Size = new System.Drawing.Size(184, 273);
+            this.PosterPictureBox.Size = new System.Drawing.Size(188, 300);
             this.PosterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.PosterPictureBox.TabIndex = 13;
             this.PosterPictureBox.TabStop = false;
-            // 
-            // ExitForm3
-            // 
-            this.ExitForm3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExitForm3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ExitForm3.FlatAppearance.BorderSize = 0;
-            this.ExitForm3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitForm3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ExitForm3.Location = new System.Drawing.Point(457, 37);
-            this.ExitForm3.Name = "ExitForm3";
-            this.ExitForm3.Size = new System.Drawing.Size(75, 23);
-            this.ExitForm3.TabIndex = 10;
-            this.ExitForm3.Text = "X";
-            this.ExitForm3.UseVisualStyleBackColor = false;
             // 
             // FilmTemplate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 450);
+            this.ClientSize = new System.Drawing.Size(566, 448);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FilmTemplate";
             this.Padding = new System.Windows.Forms.Padding(1);
             this.Text = "FilmTemplate";
@@ -374,8 +296,12 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PosterPictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -387,26 +313,20 @@
         private System.Windows.Forms.Button ExitForm3;
         private System.Windows.Forms.Button TrailerButton;
         private System.Windows.Forms.PictureBox PosterPictureBox;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label LabelPremier;
-        private System.Windows.Forms.Label LabelType;
-        private System.Windows.Forms.Label LabelDuration;
-        private System.Windows.Forms.Label LabelTranslation;
-        private System.Windows.Forms.Label LabelProducer;
-        private System.Windows.Forms.Label LabelCountry;
-        private System.Windows.Forms.Label LabelRaiting;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label IsNewLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label LabelName;
         private System.Windows.Forms.Label LabelDescription;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label IsNewLabel;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label LabelName;
+        private System.Windows.Forms.Label LabelPremier;
+        private System.Windows.Forms.Label LabelRaiting;
+        private System.Windows.Forms.Label LabelCountry;
+        private System.Windows.Forms.Label LabelType;
+        private System.Windows.Forms.Label LabelProducer;
+        private System.Windows.Forms.Label LabelDuration;
+        private System.Windows.Forms.Label LabelTranslation;
     }
 }
