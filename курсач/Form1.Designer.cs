@@ -44,7 +44,6 @@ namespace курсач
             this.panelNewsMenu = new System.Windows.Forms.Panel();
             this.btnNews = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelPlater = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
@@ -256,15 +255,6 @@ namespace курсач
             this.panelLogo.Size = new System.Drawing.Size(169, 100);
             this.panelLogo.TabIndex = 0;
             // 
-            // panelPlater
-            // 
-            this.panelPlater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.panelPlater.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelPlater.Location = new System.Drawing.Point(169, 499);
-            this.panelPlater.Name = "panelPlater";
-            this.panelPlater.Size = new System.Drawing.Size(679, 100);
-            this.panelPlater.TabIndex = 1;
-            // 
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
@@ -273,14 +263,14 @@ namespace курсач
             this.panelChildForm.Location = new System.Drawing.Point(169, 0);
             this.panelChildForm.MinimumSize = new System.Drawing.Size(551, 499);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(679, 499);
+            this.panelChildForm.Size = new System.Drawing.Size(679, 599);
             this.panelChildForm.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(245, 200);
+            this.pictureBox1.Location = new System.Drawing.Point(245, 250);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(184, 184);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -293,7 +283,6 @@ namespace курсач
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(848, 599);
             this.Controls.Add(this.panelChildForm);
-            this.Controls.Add(this.panelPlater);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -326,7 +315,6 @@ namespace курсач
         private System.Windows.Forms.Panel panelNewsMenu;
         private System.Windows.Forms.Button btnNews;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Panel panelPlater;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;

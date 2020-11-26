@@ -28,7 +28,7 @@ namespace курсач
         {
             LabelName.Text = "Назва: " + _Film.Name;
             LabelCountry.Text = "Країна: " + _Film.Country;
-            LabelDescription.Text = "Опис: " + _Film.Description;
+            LabelDescription.Text = _Film.Description;
             LabelDuration.Text = "Тривалість: " + _Film.Duration.ToString() + " хв.";
             LabelPremier.Text = "Дата прем'єри: " + _Film.ReleaseData.ToString();
             LabelProducer.Text = "Режисер: " + _Film.Producer;
@@ -48,6 +48,21 @@ namespace курсач
         {
             e.Cancel = true;
             Hide();
+        }
+
+        private void ExitForm3_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
