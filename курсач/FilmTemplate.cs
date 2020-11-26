@@ -34,7 +34,7 @@ namespace курсач
             LabelProducer.Text = "Режисер: " + _Film.Producer;
             LabelRaiting.Text = "Рейтинг: " + _Film.Rating;
             LabelTranslation.Text = "Дубляж: " + _Film.Translation;
-            LabelType.Text = "Тип: " + _Film.TypeF.ToString();
+            LabelType.Text = "Тип: " + (_Film.TypeF == TypeOfFilm.Film ? "Фільм" : "Серіал");
             IsNewLabel.Visible = _Film.IsNew;
             PosterPictureBox.Image = _Film.Poster;
         }

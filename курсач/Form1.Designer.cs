@@ -31,24 +31,19 @@ namespace курсач
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHelp = new System.Windows.Forms.Button();
-            this.btnFilm = new System.Windows.Forms.Button();
             this.btnSeries = new System.Windows.Forms.Button();
             this.panelGenresMenu = new System.Windows.Forms.Panel();
-            this.Detective = new System.Windows.Forms.Button();
-            this.survival = new System.Windows.Forms.Button();
-            this.boyevyk = new System.Windows.Forms.Button();
-            this.Horror = new System.Windows.Forms.Button();
             this.btnGenres = new System.Windows.Forms.Button();
             this.panelNewsMenu = new System.Windows.Forms.Panel();
             this.btnNews = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PanelSeries = new System.Windows.Forms.Panel();
+            this.btnFilm = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panelGenresMenu.SuspendLayout();
             this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +52,10 @@ namespace курсач
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelSideMenu.Controls.Add(this.btnHelp);
             this.panelSideMenu.Controls.Add(this.panel1);
+            this.panelSideMenu.Controls.Add(this.btnFilm);
+            this.panelSideMenu.Controls.Add(this.PanelSeries);
             this.panelSideMenu.Controls.Add(this.btnSeries);
             this.panelSideMenu.Controls.Add(this.panelGenresMenu);
             this.panelSideMenu.Controls.Add(this.btnGenres);
@@ -70,55 +68,13 @@ namespace курсач
             this.panelSideMenu.Size = new System.Drawing.Size(169, 599);
             this.panelSideMenu.TabIndex = 0;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnHelp);
-            this.panel1.Controls.Add(this.btnFilm);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 302);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(169, 100);
-            this.panel1.TabIndex = 8;
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHelp.FlatAppearance.BorderSize = 0;
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnHelp.Location = new System.Drawing.Point(0, 32);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnHelp.Size = new System.Drawing.Size(169, 30);
-            this.btnHelp.TabIndex = 8;
-            this.btnHelp.Text = "Help";
-            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
-            // 
-            // btnFilm
-            // 
-            this.btnFilm.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFilm.FlatAppearance.BorderSize = 0;
-            this.btnFilm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFilm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnFilm.Location = new System.Drawing.Point(0, 0);
-            this.btnFilm.Name = "btnFilm";
-            this.btnFilm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnFilm.Size = new System.Drawing.Size(169, 32);
-            this.btnFilm.TabIndex = 5;
-            this.btnFilm.Text = "Фільми";
-            this.btnFilm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFilm.UseVisualStyleBackColor = true;
-            this.btnFilm.Click += new System.EventHandler(this.btnFilms_Click);
-            // 
             // btnSeries
             // 
             this.btnSeries.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSeries.FlatAppearance.BorderSize = 0;
             this.btnSeries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeries.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSeries.Location = new System.Drawing.Point(0, 272);
+            this.btnSeries.Location = new System.Drawing.Point(0, 205);
             this.btnSeries.Name = "btnSeries";
             this.btnSeries.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSeries.Size = new System.Drawing.Size(169, 30);
@@ -131,79 +87,11 @@ namespace курсач
             // panelGenresMenu
             // 
             this.panelGenresMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelGenresMenu.Controls.Add(this.Detective);
-            this.panelGenresMenu.Controls.Add(this.survival);
-            this.panelGenresMenu.Controls.Add(this.boyevyk);
-            this.panelGenresMenu.Controls.Add(this.Horror);
             this.panelGenresMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelGenresMenu.Location = new System.Drawing.Point(0, 160);
             this.panelGenresMenu.Name = "panelGenresMenu";
-            this.panelGenresMenu.Size = new System.Drawing.Size(169, 112);
+            this.panelGenresMenu.Size = new System.Drawing.Size(169, 45);
             this.panelGenresMenu.TabIndex = 4;
-            // 
-            // Detective
-            // 
-            this.Detective.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Detective.FlatAppearance.BorderSize = 0;
-            this.Detective.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Detective.ForeColor = System.Drawing.Color.LightGray;
-            this.Detective.Location = new System.Drawing.Point(0, 78);
-            this.Detective.Name = "Detective";
-            this.Detective.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.Detective.Size = new System.Drawing.Size(169, 26);
-            this.Detective.TabIndex = 3;
-            this.Detective.Text = "Детектив";
-            this.Detective.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Detective.UseVisualStyleBackColor = true;
-            this.Detective.Click += new System.EventHandler(this.Detective_Click);
-            // 
-            // survival
-            // 
-            this.survival.Dock = System.Windows.Forms.DockStyle.Top;
-            this.survival.FlatAppearance.BorderSize = 0;
-            this.survival.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.survival.ForeColor = System.Drawing.Color.LightGray;
-            this.survival.Location = new System.Drawing.Point(0, 52);
-            this.survival.Name = "survival";
-            this.survival.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.survival.Size = new System.Drawing.Size(169, 26);
-            this.survival.TabIndex = 2;
-            this.survival.Text = "Виживання";
-            this.survival.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.survival.UseVisualStyleBackColor = true;
-            this.survival.Click += new System.EventHandler(this.survival_Click);
-            // 
-            // boyevyk
-            // 
-            this.boyevyk.Dock = System.Windows.Forms.DockStyle.Top;
-            this.boyevyk.FlatAppearance.BorderSize = 0;
-            this.boyevyk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.boyevyk.ForeColor = System.Drawing.Color.LightGray;
-            this.boyevyk.Location = new System.Drawing.Point(0, 26);
-            this.boyevyk.Name = "boyevyk";
-            this.boyevyk.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.boyevyk.Size = new System.Drawing.Size(169, 26);
-            this.boyevyk.TabIndex = 1;
-            this.boyevyk.Text = "Боєвик";
-            this.boyevyk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.boyevyk.UseVisualStyleBackColor = true;
-            this.boyevyk.Click += new System.EventHandler(this.boyevyk_Click);
-            // 
-            // Horror
-            // 
-            this.Horror.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Horror.FlatAppearance.BorderSize = 0;
-            this.Horror.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Horror.ForeColor = System.Drawing.Color.LightGray;
-            this.Horror.Location = new System.Drawing.Point(0, 0);
-            this.Horror.Name = "Horror";
-            this.Horror.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.Horror.Size = new System.Drawing.Size(169, 26);
-            this.Horror.TabIndex = 0;
-            this.Horror.Text = "Ужаси";
-            this.Horror.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Horror.UseVisualStyleBackColor = true;
-            this.Horror.Click += new System.EventHandler(this.Horror_Click);
             // 
             // btnGenres
             // 
@@ -277,6 +165,54 @@ namespace курсач
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // PanelSeries
+            // 
+            this.PanelSeries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.PanelSeries.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelSeries.Location = new System.Drawing.Point(0, 235);
+            this.PanelSeries.Name = "PanelSeries";
+            this.PanelSeries.Size = new System.Drawing.Size(169, 40);
+            this.PanelSeries.TabIndex = 9;
+            // 
+            // btnFilm
+            // 
+            this.btnFilm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFilm.FlatAppearance.BorderSize = 0;
+            this.btnFilm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFilm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnFilm.Location = new System.Drawing.Point(0, 275);
+            this.btnFilm.Name = "btnFilm";
+            this.btnFilm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnFilm.Size = new System.Drawing.Size(169, 32);
+            this.btnFilm.TabIndex = 10;
+            this.btnFilm.Text = "Фільми";
+            this.btnFilm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFilm.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 307);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(169, 60);
+            this.panel1.TabIndex = 12;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnHelp.Location = new System.Drawing.Point(0, 367);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnHelp.Size = new System.Drawing.Size(169, 30);
+            this.btnHelp.TabIndex = 13;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -291,8 +227,6 @@ namespace курсач
             this.Text = "Form1";
             this.panelSideMenu.ResumeLayout(false);
             this.panelSideMenu.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panelGenresMenu.ResumeLayout(false);
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -303,21 +237,18 @@ namespace курсач
         #endregion
 
         private System.Windows.Forms.Panel panelSideMenu;
-        private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnSeries;
-        private System.Windows.Forms.Button btnFilm;
         private System.Windows.Forms.Panel panelGenresMenu;
-        private System.Windows.Forms.Button Detective;
-        private System.Windows.Forms.Button survival;
-        private System.Windows.Forms.Button boyevyk;
-        private System.Windows.Forms.Button Horror;
         private System.Windows.Forms.Button btnGenres;
         private System.Windows.Forms.Panel panelNewsMenu;
         private System.Windows.Forms.Button btnNews;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnFilm;
+        private System.Windows.Forms.Panel PanelSeries;
     }
 }
 

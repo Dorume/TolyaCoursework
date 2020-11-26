@@ -27,6 +27,7 @@ namespace курсач
                 if (film.IsNew)
                     AddFilmToNew(film.Name);
             }
+            
         }
 
         private void AddFilmToNew(string nameOfFilm)
@@ -64,7 +65,7 @@ namespace курсач
         {
             panelNewsMenu.Visible = false;
             panelGenresMenu.Visible = false;
-
+            PanelSeries.Visible = false;
         }
 
         private void hideSubMenu()
@@ -73,7 +74,9 @@ namespace курсач
                 panelNewsMenu.Visible = false;
             if (panelGenresMenu.Visible == true)
                 panelGenresMenu.Visible = false;
-        
+            if (PanelSeries.Visible == true)
+                PanelSeries.Visible = false;
+
         }
         private void showSubMenu(Panel subMenu)
         {
@@ -110,7 +113,6 @@ namespace курсач
         private void Horror_Click(object sender, EventArgs e)
         {
             openChildForm(new Form4());
-
         }
 
         private void boyevyk_Click(object sender, EventArgs e)
@@ -137,7 +139,7 @@ namespace курсач
 
         private void btnSeries_Click(object sender, EventArgs e)
         {
-            hideSubMenu();
+            showSubMenu(PanelSeries);
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
